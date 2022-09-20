@@ -55,7 +55,7 @@ WHERE YEAR(o.Date) = 2021
 GROUP BY e.FirstName, e.Surname
 ORDER BY Prepared_orders DESC
 
---Average order amount and total amount by each city
+--We want to compare average order amount and total amount by each city.
 
 SELECT  c.City, AVG (o.Quantity * p.Price) AS Average_Sale, SUM(o.Quantity * p.Price) AS Total_Sale
 FROM Customers c
